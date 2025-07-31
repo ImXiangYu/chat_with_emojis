@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji 添加器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>输入文字 自动添加Emoji</h2>
+    <h3>如果感觉生成的不好，请再次点击添加emoji</h3>
+    <textarea id="userInput" rows="4" placeholder="在这里输入你的文字..."></textarea><br>
+    <button onclick="addEmoji()">添加 Emoji</button>
+    <div class="output-container">
+      <textarea id="result" class="output" rows="6" readonly></textarea>
+      <button class="copy-button" onclick="copyToClipboard()">复制文字</button>
+    </div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <!-- 引入脚本 -->
+  <script src="script.js"></script>
+</body>
+</html>
